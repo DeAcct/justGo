@@ -2,6 +2,7 @@ import ReactDOM from "react-dom";
 import "./common.scss";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -9,3 +10,5 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById("root")
 );
+
+serviceWorkerRegistration.register();
